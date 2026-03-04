@@ -3,14 +3,12 @@ ul {
     margin: 0;
     display: flex inline;
     justify-content: center;
-    height: 100vh;
+    height: 20hv;
     gap: 1rem;
-
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 li {
     list-style: none;
-
-
 }
 li a {
     text-decoration: none;
@@ -19,4 +17,43 @@ li a {
     display: block;
     background-color: #f3f3f3;
     transition: 0.5s;
+}
+.titulo {
+    text-align: center;
+    background-repeat: none;
+    background-image: url(../imagenes/imagen1.webp);
+    background-position:center;
+    height: 20rem;
+}
+.titulo::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter:blur(1px);
+}
+.contenidoTitulo{
+    color:red;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 21px;
+}
+.navegación{
+    position:relative;
+    z-index: 1;
+}
+ul:hover{
+    background-color: gray;
+}
+.contenidoPagina{
+    position: relative;
+    z-index: 1;
+}
+.contenidoPagina h2{
+    text-align: center;
+    background-color: purple;
+    height: 4rem;
 }
