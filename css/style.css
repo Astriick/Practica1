@@ -45,9 +45,6 @@ li a {
     position:relative;
     z-index: 1;
 }
-ul:hover{
-    background-color: gray;
-}
 .contenidoPagina{
     position: relative;
     z-index: 1;
@@ -56,4 +53,10 @@ ul:hover{
     text-align: center;
     background-color: purple;
     height: 4rem;
+}
+section{
+    text-align: center;
+    background-color: orange;
+    position: relative;
+    z-index: 1;
 }
